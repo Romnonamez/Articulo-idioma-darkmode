@@ -10,6 +10,22 @@ body {
     padding: 2em 5% 4em;
 }
 
+.toolbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.6em;
+    margin-bottom: 1em;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.85em;
+}
+
+.toolbar select,
+.toolbar button {
+    padding: 0.45em 0.7em;
+    font: inherit;
+}
+
 .eb-garamond-font {
     font-family: "EB Garamond", serif;
     font-optical-sizing: auto;

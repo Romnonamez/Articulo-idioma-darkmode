@@ -15,72 +15,76 @@
 
 <body class="eb-garamond-font" id="main">
     <main class="article">
-        <button id="dark-mode">Modo claro/oscuro</button>
+        <div class="toolbar">
+            <label for="language-select">Idioma / Language</label>
+            <select id="language-select">
+                <option value="es" selected>Español</option>
+                <option value="en">English</option>
+            </select>
+            <button id="dark-mode" data-i18n="darkMode">Modo claro/oscuro</button>
+        </div>
         <header>
-            <h1>Gyazo sufre una brecha de seguridad, millones de imagenes filtradas</h1>
+            <h1 data-i18n="title">Gyazo sufre una brecha de seguridad, millones de imagenes filtradas</h1>
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIF.4xBS%252bJ9n3xDXQGlja9LcDg%26r%3D0%26pid%3DApi&f=1&ipt=c1458c7e847f120d1b7c33a8020934506fe2821fff8f8185fd225263f741bd3b&ipo=images"
-                id="img-titulo">
+                id="img-titulo" data-i18n-alt="titleImageAlt" alt="Imagen principal del artículo">
         </header>
 
         <section>
-            <h3>¿Qué es Gyazo?</h3>
+            <h3 data-i18n="whatIsGyazo">¿Qué es Gyazo?</h3>
             <div style="display: table-cell;">
                 <img src="https://assets2.gyazo.com/assets/images/cases/features/case_feature_media_1@2x-5772a1ec6c.jpg"
-                    id="img-collage" class="section-image">
-                <p>Gyazo es mayormente conocido por ser tanto un software para capturas de pantalla, GIFs y grabaciones
-                    cortas,
-                    como por ser un servicio para compartir imágenes junto a otros usuarios mediante un enlace. Muchas
-                    organizaciones y empresas lo utilzan para poner enlaces a imágenes en documentación, tickets de
-                    soporte,
-                    etc...</p>
+                    id="img-collage" class="section-image" data-i18n-alt="gyazoImageAlt"
+                    alt="Capturas y herramientas de Gyazo">
+                <p data-i18n="whatIsGyazoText">Gyazo es mayormente conocido por ser tanto un software para capturas de
+                    pantalla, GIFs y grabaciones cortas, como por ser un servicio para compartir imágenes junto a otros
+                    usuarios mediante un enlace. Muchas organizaciones y empresas lo utilzan para poner enlaces a
+                    imágenes en documentación, tickets de soporte, etc...</p>
             </div>
         </section>
 
         <section class="story">
-            <h3>¿Qué ha ocurrido con Gyazo?</h3>
-            <p>El 11 de septiembre de 2026, un atacante se aprovechó de una vulnerabilidad en el servidor de subida de
-                imagenes y consiguió acceder a los sistemas de la empresa, el propio servidor de imágenes e incluso
-                datos
-                personales de clientes.</p>
+            <h3 data-i18n="whatHappened">¿Qué ha ocurrido con Gyazo?</h3>
+            <p data-i18n="whatHappenedText">El 11 de septiembre de 2026, un atacante se aprovechó de una vulnerabilidad
+                en el servidor de subida de imagenes y consiguió acceder a los sistemas de la empresa, el propio
+                servidor de imágenes e incluso datos personales de clientes.</p>
             <img src="https://img2.helpnetsecurity.com/posts2026/data_breach-1.webp" id="img-data-breach"
-                class="section-image">
+                class="section-image" data-i18n-alt="breachImageAlt" alt="Ilustración de una filtración de datos">
         </section>
 
         <section>
-            <h3>¿Qué o quién se vió afectado?</h3>
+            <h3 data-i18n="affected">¿Qué o quién se vió afectado?</h3>
             <div>
                 <div>
-                    <p>La empresa confirmó que se habían extraido aproximadamente:</p>
+                    <p data-i18n="extractedIntro">La empresa confirmó que se habían extraido aproximadamente:</p>
                     <ul>
-                        <li>23,62 millones de registros de usuarios, con datos como correos, nombres, identificadores,
-                            hashes de
-                            contraseñas, sesiones y algunos tokens de integración.</li>
-                        <li>Cerca de 490 millones de registros de metadatos de imágenes, incluyendo identificadores, y
-                            direcciones IP de subida.</li>
-                        <li>También se obtuvo una lista de imágenes privadas; la empresa no puede descartar que algunas
-                            fueran
-                            consultadas.</li>
+                        <li data-i18n="extractedUsers">23,62 millones de registros de usuarios, con datos como correos,
+                            nombres, identificadores, hashes de contraseñas, sesiones y algunos tokens de integración.
+                        </li>
+                        <li data-i18n="extractedImages">Cerca de 490 millones de registros de metadatos de imágenes,
+                            incluyendo identificadores, y direcciones IP de subida.</li>
+                        <li data-i18n="extractedPrivate">También se obtuvo una lista de imágenes privadas; la empresa
+                            no puede descartar que algunas fueran consultadas.</li>
                     </ul>
                 </div>
                 <img src="https://www.securityweek.com/wp-content/uploads/2026/09/image-file-photo-sharing.jpeg"
-                    id="img-pc-images" class="section-image">
+                    id="img-pc-images" class="section-image" data-i18n-alt="imagesImageAlt"
+                    alt="Imagen de una colección de imágenes digitales">
             </div>
-            <p>Según la empresa, no se expusieron datos de tarjetas bancarias. Como consecuencia,
+            <p data-i18n="impactText">Según la empresa, no se expusieron datos de tarjetas bancarias. Como consecuencia,
                 Gyazo detuvo temporalmente parte de sus servidores de entrega: algunas capturas antiguas pueden mostrar
-                errores o no abrir, aunque la empresa afirma que los archivos no se han borrado y que las imágenes
-                nuevas
+                errores o no abrir, aunque la empresa afirma que los archivos no se han borrado y que las imágenes nuevas
                 vuelven a funcionar normalmente.</p>
-            <p>Si usabas Gyazo, cambia cuanto antes tu contraseña de Gyazo y cualquier otra cuenta donde reutilizaras
-                una contraseña igual o parecida. También conviene revisar cuentas vinculadas mediante Google o X y
-                desconfiar de correos que pidan iniciar sesión o restablecer credenciales. La investigación sigue
-                abierta y las cifras podrían actualizarse.</p>
+            <p data-i18n="adviceText">Si usabas Gyazo, cambia cuanto antes tu contraseña de Gyazo y cualquier otra cuenta
+                donde reutilizaras una contraseña igual o parecida. También conviene revisar cuentas vinculadas mediante
+                Google o X y desconfiar de correos que pidan iniciar sesión o restablecer credenciales. La investigación
+                sigue abierta y las cifras podrían actualizarse.</p>
             <img src="https://assets2.gyazo.com/assets/images/top/platforms_bg_1-14d5e24863.webp" id="img-gyazo-images"
-                class="section-image">
+                class="section-image" data-i18n-alt="gyazoPlatformAlt" alt="Plataformas compatibles con Gyazo">
 
         </section>
     </main>
     <footer style="margin-left: 15%;">
-        <p>Fuentes de este artículo: <a
+        <p><span data-i18n="sources">Fuentes de este artículo:</span> <a
                 href="https://www.helpnetsecurity.com/2026/09/21/helpfeel-gyazo-data-breach/">helpnetsecurity</a>, <a
                 href="https://help.gyazo.com/Notice_Regarding_Temporary_Image_Viewing_Restrictions-6aa7e48bf22bdc7c11ac3230">Gyazo</a>
             y <a
