@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background: #f5f2eb;
+    color: #1d1d1d;
+}
+
+.article {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em 5% 4em;
+}
+
+.eb-garamond-font {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.15em;
+    line-height: 1.7;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+#img-titulo {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    border: 4px solid #323232;
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+.section-image {
+    display: block;
+    width: 40%;
+    max-width: 100%;
+    border: 1px solid #323232;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+#img-collage {
+    margin-right: 1.5em;
+    float: left;
+}
+
+#img-data-breach {
+    margin: 1em auto 0;
+    width: 50%
+}
+
+#img-pc-images {
+    margin-left: 1.5em;
+}
+
+ul {
+    padding-left: 1.5em;
+    margin-top: 0.75em;
+}
+
+li {
+    margin-top: 0.6em;
+}
